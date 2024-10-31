@@ -1,0 +1,165 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    z-index: 10;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-links a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.navbar-links a:hover {
+    color: #ffc107;
+}
+
+/* Gaya Umum */
+* {
+    box-sizing: border-box;
+}
+
+/* Kontainer Slideshow */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slide */
+.mySlides {
+    display: none;
+}
+
+/* Gaya Gambar */
+.mySlides img {
+    width: 100%;
+}
+
+/* Efek Fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+/* Efek Fade */
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    background-image: url('images/tampilan_pura.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.welcome-container {
+    text-align: center;
+}
+.school-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 2rem;
+}
+.profile-section, .services-section, .gallery-section, .contact-section {
+    text-align: center;
+}
+.profile-content, .services-content, .gallery-content {
+    display: grid;
+    gap: 2rem;
+}
+.profile-content, .services-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery-content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.gallery-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.gallery-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.contact-info {
+    font-size: 1.1em;
+    text-align: left;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 0.75rem 2rem;
+    background-color: #ffc107;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background-color: #ffb300;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
